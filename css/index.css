@@ -1,0 +1,484 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    display:flex;
+    width:100vw;
+    height:100vh;
+}
+header{
+    width:20%;
+    height:100%;
+}
+main{
+    width:80%;
+    height:100%;
+    overflow: auto;
+}
+#up-header{
+    width:100%;
+    height: 50%;
+}
+#down-header{
+    background-color: black;
+    width:100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+}
+#img-sec{
+    background-color: black;
+    width:100%;
+    height: 60%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+#img-border{
+    border: 5px solid rgb(65, 64, 64);
+    height:90%;
+    width:70%;
+    border-radius: 90%;
+}
+#prof{
+    height:100%;
+    width:100%;
+    border-radius: 50%;
+}
+#dis-sec{
+    height:40%;
+    width:100%;
+    background-color: black;
+}
+#dis-sec p{
+    font-size: 36px;
+    color: white;
+}
+#up-dis-sec{
+    height:40%;
+    width:100%;
+    background-color: black;
+    text-align: center;
+}
+#down-dis-sec{
+    background-color: black;
+    height:60%;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.social-box{
+    width:15%;
+    height:50%;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: rgb(65, 64, 64);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-box:hover{
+    background-color: lightblue;
+}
+#down-dis-sec img{
+    height:35px;
+}
+#main-up{
+    height:7%;
+    width:100%;
+    background-color: transparent;
+    background-color: aqua;
+    display:none;
+}
+#sidebar-button{
+    height:100%;
+    width:15%;
+    border:1px solid transparent;
+    border-radius: 50%;
+    background-color: blue;
+    display: none;
+}
+#sidebar-button button{
+    height:100%;
+    width:100%;
+    background-color: lightblue;
+    border:1px solid transparent;
+    border-radius: 50%;
+}
+#back_pic{
+    height: 730px;
+    width: 100%;
+    background-image: url('image/profile.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#about{
+    height:500px;
+    width:100%;
+    background-color: whitesmoke;
+}
+#about-dis{
+    height:45%;
+    width:97%;
+    padding-left: 30px;
+}
+#about h2{
+    font-size: 32px;
+    padding-left: 30px;
+}
+#about hr{
+    border:2px solid blue;
+    width:120px;
+}
+#about-photo{
+    height:55%;
+    width:97%;
+    padding-left: 30px;
+    display:flex;
+}
+#photoinabout{
+    height:70%;
+}
+#about-photo-left{
+    height:100%;
+    width:30%;
+}
+#about-photo-right{
+    height:100%;
+    width:70%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#tab1{
+    height:100%;
+    width:60%;
+}
+#tab2{
+    height:100%;
+    width:40%;
+}
+#tab1 ul{
+    height:50%;
+    width:100%;
+}
+#tab1 p{
+    font-size: 23px;
+}
+#tab2 ul{
+    height:50%;
+    width:100%;
+}
+#tab2 p{
+    font-size: 23px;
+}
+section{
+    font-size:20px;
+    font-family:'Times New Roman', Times, serif;
+}
+#down-header li{
+    color: white;
+    font-size: 26px;
+}
+#down-header li:hover{
+    color:lightblue;
+    font-size: 26px;
+}
+#skills{
+    height:450px;
+    width:100%;
+    background-color: white;
+}
+#skills-dis{
+    height:40%;
+    width:97%;
+    padding-left: 30px;
+}
+#skills h2{
+    font-size: 32px;
+}
+#skills hr{
+    border:2px solid blue;
+    width:120px;
+}
+#skills-rest{
+    height:60%;
+    width:97%;
+    display: flex;
+}
+#skills-rest-1{
+    height:100%;
+    width:33%;
+}
+#skills-rest-2{
+    height:100%;
+    width:33%;
+}
+#skills-rest-3{
+    height:100%;
+    width:33%;
+}
+.star-row{
+    height:20%;
+    width:100%;
+    display: flex;
+}
+.star-row-1col{
+    width:50%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.star-row-1col p{
+    font-size: 16px;
+}
+.star-row-2col{
+    display: flex;
+    width:50%;
+    height:100%;
+}
+.fa-star{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+li a{
+    text-decoration: none;
+    color: white;
+    font-size: 32;
+}
+li a:hover{
+    color: lightblue;
+    font-size: 33px;
+}
+#photo-p{
+    color:white;
+    font-size: 38px;
+    z-index: 2;
+}
+.fade-in {
+    opacity: 0; 
+    animation: fadeIn 1s ease-in forwards; 
+    scroll-margin-top: vh;
+}
+#contact{
+    height:80%;
+    width:97.9%;
+    background-color: whitesmoke;
+    padding-left: 25px;
+}
+#con-1{
+    height:8%;
+    width:98%;
+}
+#con-1 p{
+    font-size: 32px;
+    padding-left: 15px;
+}
+#con-1 hr{
+    border: 2px solid blue;
+    width: 120px;
+}
+#con-main-box{
+    height:83%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#con-main-1{
+    height:95%;
+    width:40%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+#con-main-2{
+    height: 95%;
+    width:55%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#con-main-1-01{
+    height:20%;
+    width:100%;
+    display: flex;
+}
+#con-main-1-02{
+    height:20%;
+    width:100%;
+    display: flex;
+}
+#con-main-1-01-left{
+    height:100%;
+    width:20%;
+    justify-content: center;
+    display: flex;
+}
+#con-main-1-01-right{
+    height:100%;
+    width:80%;
+}
+#location-box{
+    height:60%;
+    width: 60%;
+    background-color: lightblue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#con-main-1-01-right b{
+    font-size: 24px;
+}
+#con-main-1-01-right p{
+    font-size: 18px;
+}
+#write-box{
+    height:100%;
+    width:90%;
+}
+#write-box a{
+    text-decoration: none;
+    font-size: 18px;
+    color:blue;
+}
+#req-box{
+    height:97%;
+    width:95%;
+}
+#req-box form{
+    height:100%;
+    width:100%;
+}
+.row1{
+    height:15%;
+    width:100%;
+}
+.row12{
+    height:11%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#form-buut{
+    height:100%;
+    width:20%;
+    background-color: lightblue;
+    font-size: 18px;
+    color: black;
+    border-radius: 15px;
+}
+.row2{
+    height:50%;
+    width:100%;
+}
+.lab{
+    width:100%;
+    height:30%;
+    display: flex;
+    justify-content: space-between;
+}
+.lab1{
+    width:100%;
+    height:15%;
+    display: flex;
+    justify-content: space-between;
+}
+.box1{
+    width:100%;
+    height:70%;
+    display: flex;
+    justify-content: space-between;
+}
+.box11{
+    width:100%;
+    height:80%;
+    display: flex;
+    justify-content: space-between;
+}
+.lab p{
+    font-size: 20px;
+    width:45%;
+}
+.lab1 p{
+    font-size: 20px;
+    width:45%;
+} 
+.half-box{
+    height:77%;
+    width:45%;
+    border:1px solid gray;
+    border-radius: 10px;
+    font-size: 18px;
+}
+.full-box{
+    height:77%;
+    width:100%;
+    border:1px solid gray;
+    border-radius: 10px;
+    font-size: 18px;
+}
+.full-box1{
+    height:90%;
+    width:100%;
+    border:1px solid gray;
+    border-radius: 10px;
+    font-size: 18px;
+}
+  @keyframes fadeIn {
+    from {
+      opacity: 0; 
+    }
+    to {
+      opacity: 1;
+    }
+  }
+@media only screen and (max-height:935px) and (min-height:660px) and (max-width:441px) and (min-width:360px) {
+    #header{
+        display: none;
+        z-index: 2;
+        width:70%;
+        height: 100%;
+        position: relative;
+    }
+    main{
+        background-color: azure;
+        width:100%;
+        z-index: 0;
+        position:absolute;
+    }
+    #main-up{
+        display:block;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    #sidebar-button{
+        display: block;
+    }
+    #up-header{
+        height: 40%;
+    }
+    #down-header{
+        height: 60%;
+    }
+    #back-photo{
+            height: 600px;
+            width: 100%;
+            background-image: url('photos/profile.jpg');
+            background-size: cover; 
+            background-position: center;
+    }
+}
